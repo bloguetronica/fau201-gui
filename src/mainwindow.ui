@@ -170,11 +170,14 @@
     <property name="title">
      <string>&amp;File</string>
     </property>
+    <addaction name="actionLoad"/>
+    <addaction name="actionSave"/>
+    <addaction name="separator"/>
     <addaction name="actionQuit"/>
    </widget>
-   <widget class="QMenu" name="menuSettings">
+   <widget class="QMenu" name="menuOptions">
     <property name="title">
-     <string>&amp;Settings</string>
+     <string>&amp;Options</string>
     </property>
     <addaction name="actionAutoApply"/>
     <addaction name="actionResetClear"/>
@@ -188,7 +191,7 @@
     <addaction name="actionAbout"/>
    </widget>
    <addaction name="menuFile"/>
-   <addaction name="menuSettings"/>
+   <addaction name="menuOptions"/>
    <addaction name="menuHelp"/>
   </widget>
   <action name="actionQuit">
@@ -215,7 +218,7 @@
     <bool>true</bool>
    </property>
    <property name="text">
-    <string>&amp;Clear Settings after Reset</string>
+    <string>&amp;Clear after Reset</string>
    </property>
   </action>
   <action name="actionSerial">
@@ -226,6 +229,22 @@
   <action name="actionAbout">
    <property name="text">
     <string>&amp;About FAU201 GUI</string>
+   </property>
+  </action>
+  <action name="actionLoad">
+   <property name="text">
+    <string>&amp;Load Settings</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>&amp;Save Settings</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
    </property>
   </action>
  </widget>

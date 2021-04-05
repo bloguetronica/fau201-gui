@@ -1,5 +1,5 @@
-/* FAU201 GUI - Version 1.0 for Debian Linux
-   Copyright (c) 2018 Samuel Lourenço
+/* FAU201 GUI - Version 2.0 for Debian Linux
+   Copyright (c) 2018-2019 Samuel Lourenço
 
    This program is free software: you can redistribute it and/or modify it
    under the terms of the GNU General Public License as published by the Free
@@ -23,6 +23,7 @@
 
 // Includes
 #include <QMainWindow>
+#include <QtXml>
 
 namespace Ui {
 class MainWindow;
@@ -38,6 +39,8 @@ public:
 
 private slots:
     void on_actionAbout_triggered();
+    void on_actionLoad_triggered();
+    void on_actionSave_triggered();
     void on_actionSerial_triggered();
     void on_doubleSpinBoxVolt_valueChanged(const QString &arg);
     void on_pushButtonApply_clicked();
@@ -46,7 +49,8 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    QString serialstr_;
+    QString filepath_, serialstr_;
+    int implementSettings(const QDomElement &parent);
     void execute(const QString &command);
 };
 
