@@ -1,5 +1,5 @@
-/* FAU201 GUI - Version 2.0 for Debian Linux
-   Copyright (c) 2018-2019 Samuel Lourenço
+/* FAU201 GUI - Version 2.1 for Debian Linux
+   Copyright (c) 2018-2024 Samuel Lourenço
 
    This program is free software: you can redistribute it and/or modify it
    under the terms of the GNU General Public License as published by the Free
@@ -23,6 +23,7 @@
 
 // Includes
 #include <QDialog>
+#include <QString>
 
 namespace Ui {
 class Serial;

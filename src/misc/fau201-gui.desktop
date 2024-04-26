@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=FAU201 GUI
+Icon=fau201-gui
+Exec=fau201-gui
+Terminal=false
+Categories=Development;Electronics;
